@@ -95,3 +95,90 @@ fimenquanto
 media<- soma/10
 escreval ("a média dos valores é:", media)
 fimalgoritmo
+5-
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : ler a idade de varias pessoas e calcular média da idade, encerrar quando o valor for negativo
+// Autor(a)    : Ana Luiza Stábile e Luiz Henrique Reinehr
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis
+idade,contador:inteiro
+media:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+ escreval("insira a idade")
+ leia(idade)
+ 
+   enquanto idade>=0 faca
+    contador<-contador+1
+     media<-media+idade
+     escreval("insira a idade")
+     leia(idade)
+
+   fimenquanto
+   
+   escreval("foram lidas",contador," idades")
+   
+     media<-media/contador
+escreval("a media de idades digitadas é:",media)
+Fimalgoritmo
+
+
+6-
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : ler uma sequencia de numeros do usuario e escreva o dobro de cada numero lido
+// Autor(a)    : Ana Luiza Stábile e Luiz Henrique Reinehr
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis
+contador: inteiro
+n: inteiro
+dobro: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreval("Insira um número")
+leia (n)
+enquanto n>=0 faca
+dobro<- n * 2
+escreval ("o valor do dobro de", n, " é: ", dobro)
+escreval("Insira um número")
+leia (n)
+fimenquanto
+Fimalgoritmo
+
+EXERCÍCIO
+
+1- 
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Solicitar ao usuário login ou senha, caso login e senha errados, pedor para inserir novamente. Caso certo, exibir a mensagem "bem-vindo ao sistema"
+// Autor(a)    : Ana Luiza Stábile e Luiz Henrique Reinehr
+// Data atual  : 16/09/2024
+Var
+// Seção de Declarações das variáveis
+login,senha: caractere
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+login<-"Admin"
+senha<-"Admin123"
+escreval("insira o login")
+leia(login)
+escreval("insira a senha")
+leia (senha)
+
+   enquanto (login<>"Admin")e(senha<>"Admin123") faca
+escreval ("digite novamente login")
+leia(login)
+escreval("insira a senha")
+  leia(senha)
+ fimenquanto
+escreval("Bem-vindo ao sistema!")
+Fimalgoritmo
