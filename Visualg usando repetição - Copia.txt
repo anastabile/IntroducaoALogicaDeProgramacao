@@ -1,0 +1,97 @@
+1-
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :Larissa Ribeiro
+// Descrição   :calcular a soma dos números de 1 a 20 usando comando de repetição
+// Autor(a)    : Ana Luiza Stábile, Luiz Henrique Reinehr
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis 
+contador,soma:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+contador <-1
+enquanto contador <=20 faca
+         soma <- soma+contador
+         contador <- contador + 1
+escreval ("O valor da soma é", soma)
+
+fimenquanto
+Fimalgoritmo
+
+
+2-
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :Larissa Ribeiro
+// Descrição   :escrever os numeros pares existentes entre 1 a 20
+// Autor(a)    : Ana Luiza Stábile, Luiz Henrique Reinehr
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+contador,par:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+contador <- 1
+enquanto contador <=20 faca
+         par<- contador%2
+
+              se par=0 entao
+              escreval (contador,"é par")
+              fimse
+contador <- contador + 1
+fimenquanto
+Fimalgoritmo
+
+
+3-
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :Larissa Ribeiro
+// Descrição   :calcular um número fatorial
+// Autor(a)    : Ana Luiza Stábile, Luiz Henrique Reinehr
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+contador,numero,fatorial:inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+fatorial<-1
+escreval("digite o valor que deseja saber o fatorial")
+leia (numero)
+enquanto numero >=1 faca
+         fatorial<-fatorial * numero
+         numero<-numero - 1
+fimenquanto
+escreval("O resultado é",fatorial)
+Fimalgoritmo
+
+
+4- 
+
+Algoritmo "repetições"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   :Larissa Ribeiro
+// Descrição   :calcular um número fatorial
+// Autor(a)    : Ana Luiza Stábile, Luiz Henrique Reinehr
+// Data atual  : 12/09/2024
+Var
+// Seção de Declarações das variáveis
+contador:inteiro
+nota,media,soma:real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+contador<-1
+enquanto contador<=10 faca
+
+escreval("insira nota")
+leia(nota)
+soma<- soma + nota
+contador<- contador + 1
+fimenquanto
+media<- soma/10
+escreval ("a média dos valores é:", media)
+fimalgoritmo
